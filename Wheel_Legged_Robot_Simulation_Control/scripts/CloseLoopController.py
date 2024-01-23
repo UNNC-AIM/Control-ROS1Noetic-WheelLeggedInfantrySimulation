@@ -92,7 +92,7 @@ class CloseLoopController:
     def PhysicUpdate(self):
         while not rospy.is_shutdown():
             #left
-            print(self.legControlTarget)
+            #print(self.legControlTarget)
             _command_ang_A,_command_ang_B ,_command_ang_A_ = self.GetCommandAngle(Target_Height=self.legControlTarget['leftHeight'],
                                                                                   Target_Position=self.legControlTarget['leftPosition'])
             self.leftFrontDrivePub.publish(-_command_ang_A)
