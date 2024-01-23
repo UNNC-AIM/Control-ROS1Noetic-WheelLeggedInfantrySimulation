@@ -1,0 +1,92 @@
+<?xml version="1.0" ?>
+<robot name="Wheel_Legged_Robot" xmlns:xacro="http://www.ros.org/wiki/xacro" >
+
+<transmission name="Left_Rear_Drive_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Left_Rear_Drive">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Left_Rear_Drive_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Left_Front_Drive_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Left_Front_Drive">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Left_Front_Drive_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Right_Rear_Drive_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Right_Rear_Drive">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Right_Rear_Drive_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Right_Front_Drive_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Right_Front_Drive">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Right_Front_Drive_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Right_1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Right_1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Right_1_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Right_Wheel_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Right_Wheel">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Right_Wheel_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Left_1_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Left_1">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Left_1_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+<transmission name="Left_Wheel_tran">
+  <type>transmission_interface/SimpleTransmission</type>
+  <joint name="Left_Wheel">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+  </joint>
+  <actuator name="Left_Wheel_actr">
+    <hardwareInterface>hardware_interface/EffortJointInterface</hardwareInterface>
+    <mechanicalReduction>1</mechanicalReduction>
+  </actuator>
+</transmission>
+
+</robot>
