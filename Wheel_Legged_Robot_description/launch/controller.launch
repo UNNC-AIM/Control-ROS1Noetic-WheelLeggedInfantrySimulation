@@ -1,0 +1,9 @@
+<launch>
+
+<rosparam file="$(find Wheel_Legged_Robot_description)/launch/controller.yaml" command="load"/>
+<node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="false" output="screen" ns="/Wheel_Legged_Robot" args="Left_Rear_Drive_position_controller Left_Front_Drive_position_controller Right_Rear_Drive_position_controller Right_Front_Drive_position_controller Right_1_position_controller Right_Wheel_position_controller Left_1_position_controller Left_Wheel_position_controller joint_state_controller "/>
+<node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="false" output="screen">
+  <remap from="/joint_states" to="/Wheel_Legged_Robot/joint_states"/>
+</node>
+
+</launch>
