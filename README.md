@@ -27,7 +27,9 @@ roslaunch Wheel_Legged_Robot_description controller.launch
 gazebo is pausing, start it
 
 # Control
-origin is in the center of two leg drive motors, 
+origin is in the center of two leg drive motors, then
+
+Python3 CloseLoopController.py
 ## Height
 up is positive
  
